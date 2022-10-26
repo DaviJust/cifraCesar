@@ -3,12 +3,11 @@
 
 
 
-body{
-    margin: 0  ;
+body {
+    margin: 0;
     font-family: 'IM Fell English', serif;
-    color: white;
-    background-image: url("/images/greec.jpg");
-    
+    color: rgb(7, 3, 3);
+    background-image: url("/img/greec.jpg");
 }
 
 .title {
@@ -18,15 +17,32 @@ body{
     font-family: 'IM Fell English', serif;
 }
 
+.titleStatus1
+{
+    color: black;
+    background-color: #FAE8AB;
+    text-align: center;
+    font-family: 'IM Fell English', serif;
+}
+
+.titleStatus2
+{
+    color: black;
+    background-color: #FAE8AB;
+    text-align: center;
+    font-family: 'IM Fell English', serif;
+}
+
 .options {
-     background-color: #FAE8AB;
+    background-color: #FAE8AB;
     color: black;
     font-family: 'IM Fell English', serif;
-    margin:10px;
+    margin: 10px;
     width: 400px;
 
 }
-.writeHere{
+
+.writeHere {
     margin-left: 90px;
 }
 
@@ -34,12 +50,19 @@ body{
     font-family: 'IM Fell English', serif;
 }
 
-.bottons{
+.buttonsCode {
     font-family: 'IM Fell English', serif;
     height: 40px;
     margin-right: 340px;
 }
-.mensageNonCodifc{
+
+.buttonsUncodific {
+    font-family: 'IM Fell English', serif;
+    height: 40px;
+    margin-right: 340px;
+}
+
+.mensageNonCodifc {
     background-color: #FAE8AB;
     color: black;
     font-family: 'IM Fell English', serif;
