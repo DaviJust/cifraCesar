@@ -5,36 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Cifra De Cesar</title>
+    <title>Cifra Cesar/ BASE64!</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav class="title">
-        Codificação de Mensagens
-    </nav>
-    <br>
-    <div class="options">
-        Modelos:
-        <input class="cifraBase" type="radio" id="html" name="fav_language" value="HTML">
-        Cifra Cesar
-          <input class="cifraBase base64" type="radio" id="html" name="fav_language" value="HTML">
-        Base64
-    </div>
-    <div class="options options1">
-     
-    </div>
+    <header class="cabecalho">
+    </header>
+    <!--Preenchimento das informacoes(Formulario)-->
+    <main class="menu">
+        <div class="form">
+            <h1 class="titulo">Cifra De Cesar/BASE64</h1>
 
-    <div class="titleStatus1">Digite sua mensagem</div>
-    <br><input class="mensageNonCodifc"></input>
-    <button class="buttonsCode">Codificar</button>
+            <!--Seleção do opção codificador usado-->
 
-    <div class="titleStatus2">Mensagem codificada</div>
-    <br><input class="mensageNonCodifc"></input>
-    <button class="buttonsUncodific">Decodificar</button>
+            <p class="tipoCripto">Tipo de criptografia</p>
+            <select name="" id="selecao">
+                <option value="" disabled selected>Escolha uma opção</option>
+                <option id="cesar">Cifra de Cesar</option>
+                <option id="base">Base 64</option>
+                <input type="number" id="passoCesar" class="increment" onkeyup="validandoPasso()">Incremento Cesar
+            </select>
 
-    <script src="./script/index.js"></script>
-
+            <!--Empacotamento do codigo(Criptografia)-->
+            <div class="botao">
+                <form>
+                    <input type="radio" name="code" id="criptografar" class="cripto" checked="checked" />
+                    <label for="criptografar"> Criptografar</label>
+                    <!--Tornar o texto clicável para atribuir o radio botton e seleciona somente uma das opcoes-->
+                    <input type="radio" name="code" id="descriptografar" class="cripto" value="descriptografar" />
+                    <label for="descriptografar"> Descriptografar</label>
+                </form>
+            </div>
+            <form id="mensagens">
+                <p>Escreva sua mensagem</p>
+                <input class="mensagemRecebida64" id="received64" type="text" placeholder="Digite sua mensagem" required
+                    onkeyup="base64()" />
+                <input id="receivedCesar" class="styleCesar" type="text" placeholder="Digite sua mensagem" required
+                    onkeyup="validandoPasso()" />
+                <p>Texto Criptografado</p>
+                <textarea name="ConvertedTXT" class="output64" id="output64" placeholder="Resultado"></textarea>
+                <textarea name="ConvertedTXT" id="outputCesar" class="outputCesar"
+                    placeholder="Resultado"></textarea>
+            </form>
+        </div>
+    </main>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

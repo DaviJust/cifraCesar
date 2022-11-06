@@ -1,0 +1,114 @@
+/* * fontes */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=IM+Fell+Great+Primer+SC&display=swap');
+
+
+
+body {
+  margin: 0;
+  font-family: 'IM Fell English', serif;
+  color: rgb(7, 4, 3);
+  background-image: url(/img/greec.jpg);
+  background-color: #70593e;
+}
+
+.tipoCripto {
+  align-items: center;
+  font-size: 30px;
+  width: 270px;
+  margin-bottom: -20px;
+  margin-left: 49px;
+}
+
+.menu {
+  margin-right: 0px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  background-color: rgb(255, 166, 0);
+  height: 700;
+  width: 580px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.800);
+}
+
+.titulo {
+  color: rgb(72, 67, 57);
+  align-items: center;
+  font-size: 38px;
+  margin-left: 70px;
+}
+
+#selecao {
+  margin: 30px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.increment {
+  display: none;
+  width: 50px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.mensagemRecebida64 {
+  display: none;
+  width: 545px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+}
+
+.styleCesar {
+  display: none;
+  width: 545px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+}
+
+
+.outputCesar {
+  display: none;
+  width: 560px;
+  margin: 10px;
+  height: 300px;
+}
+
+
+#mensagens {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+
+.botao {
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+
+
+.cripto {
+  width: 240px;
+}
+
+.output64 {
+  display: none;
+  width: 560px;
+  margin: 10px;
+  height: 300px;
+}
+
+.descriptografar {
+  width: 240px;
+}
+
+p {
+  font-size: 20px;
+  margin-left: 180px;
+}
