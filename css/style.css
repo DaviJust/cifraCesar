@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: 'IM Fell English', serif;
   color: rgb(7, 4, 3);
-  background-image: url(img/greec.jpg);
+  background-image: url("img/greec.jpg");
   background-color: #70593e;
 }
 
